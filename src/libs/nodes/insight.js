@@ -4,13 +4,13 @@ import config from 'libs/config'
 let domain = ''
 switch(config.getNetwork()) {
   case 'testnet':
-    domain = 'https://testnet.qtum.org'
+    domain = 'https://'
     break
   case 'mainnet':
-    domain = 'https://explorer.qtum.org'
+    domain = 'http://35.226.132.89:3001/htmlcoin-explorer/'
     break
 }
-const apiPrefix = domain + '/insight-api'
+const apiPrefix = 'http://35.226.132.89:3001/htmlcoin-api'
 
 const _get = async url => {
   return (await axios.get(apiPrefix + url)).data
