@@ -1,2 +1,2 @@
-# qtum-web-wallet
-A web wallet for QTUM
+# html-web-wallet
+A web wallet for Htmlcoin
