@@ -46,7 +46,7 @@ export default class Ledger {
     const htmlcoin = new btcApp(await transportU2f.create())
     // ensure in HTML App
     const pubkeyRes = await htmlcoin.getWalletPublicKey(Ledger.defaultPath)
-    if (pubkeyRes.bitcoinAddress[0] !== 'Q') {
+    if (pubkeyRes.bitcoinAddress[0] !== 'H') {
       throw 'Not HTML App'
     }
     return new Ledger(htmlcoin)
