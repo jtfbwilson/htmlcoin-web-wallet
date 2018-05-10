@@ -6,7 +6,7 @@ switch(config.getNetwork()) {
   case 'testnet':
     domain = 'https://'
     break
-  case 'mainnet':
+  case 'livenet':
     domain = 'http://35.226.132.89:3001/htmlcoin-explorer/'
     break
 }
