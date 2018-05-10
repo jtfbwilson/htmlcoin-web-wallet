@@ -10,7 +10,7 @@ switch(config.getNetwork()) {
     domain = 'http://35.226.132.89:3001/htmlcoin-explorer/'
     break
 }
-const apiPrefix = 'http://35.226.132.89:3001/htmlcoin-api'
+const apiPrefix = 'http://35.226.132.89:3001/htmlcoin-api/'
 
 const _get = async url => {
   return (await axios.get(apiPrefix + url)).data
