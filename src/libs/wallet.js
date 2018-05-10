@@ -12,7 +12,7 @@ switch (config.getNetwork())
   case 'testnet':
     network = htmlcoin.networks.htmlcoin_testnet
     break
-  case 'mainnet':
+  case 'livenet':
     network = htmlcoin.networks.htmlcoin
     break
 }
