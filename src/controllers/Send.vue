@@ -102,7 +102,7 @@
 
 <script>
 import webWallet from 'libs/web-wallet'
-import qrc20 from 'libs/qrc20'
+import hrc20 from 'libs/hrc20'
 import server from 'libs/server'
 
 export default {
@@ -125,7 +125,7 @@ export default {
   computed: {
     tokens: function() {
       const tokenList = [{text: 'HTML', value: 'HTML'}]
-      qrc20.getTokenList().forEach((token) => {tokenList[tokenList.length] = {text: token.symbol, value: token.symbol}})
+      hrc20.getTokenList().forEach((token) => {tokenList[tokenList.length] = {text: token.symbol, value: token.symbol}})
       return tokenList
     },
     notValid: function() {
@@ -155,12 +155,12 @@ export default {
             this.rawTx = 'Please confirm tx on your ledger...'
           }
           this.rawTx = await wallet.generateTx(this.address, this.amount, this.fee)
-        } else if (qrc20.checkSymbol(this.symbol)) {
+        } else if (hrc20.checkSymbol(this.symbol)) {
           if (wallet.extend.ledger) {
             this.rawTx = 'Please confirm tx on your ledger...'
           }
-          const token = qrc20.getTokenBySymbol(this.symbol)
-          const encodedData = qrc20.encodeSendData(token, this.address, this.amount)
+          const token = hrc20.getTokenBySymbol(this.symbol)
+          const encodedData = hrc20.encodeSendData(token, this.address, this.amount)
           this.rawTx = await wallet.generateSendToContractTx(token.address, encodedData, this.gasLimit, this.gasPrice, this.fee)
         }
         this.canSend = true
