@@ -25,7 +25,7 @@ export default {
     return await _get(`/addr/${address}`)
   },
 
-  async getQrc20(address) {
+  async getHrc20(address) {
     return await _get(`/erc20/balances?balanceAddress=${address}`)
   },
 
