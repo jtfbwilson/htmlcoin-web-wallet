@@ -43,10 +43,10 @@
           </v-btn>
         </v-flex>
       </v-layout>
-      <v-layout v-if="wallet.info.qrc20.length > 0">
+      <v-layout v-if="wallet.info.hrc20.length > 0">
         <v-flex xs3>
           <v-subheader>
-            QRC20
+            HRC20
           </v-subheader>
         </v-flex>
         <v-flex xs7>
