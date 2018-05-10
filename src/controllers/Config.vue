@@ -80,7 +80,7 @@ export default {
       network: loadConfig.network,
       networkSelect: [
         { value: 'testnet', text: this.$t('common.testnet')},
-        { value: 'livenet', text: this.$t('common.mainnet')},
+        { value: 'livenet', text: this.$t('common.livenet')},
       ],
       mode: loadConfig.mode,
       modeSelect: [
