@@ -10,10 +10,10 @@ let network = {}
 switch (config.getNetwork())
 {
   case 'testnet':
-    network = htmlcoinjs.networks.htmlcoin_testnet
+    network = htmlcoin.networks.htmlcoin_testnet
     break
   case 'mainnet':
-    network = htmlcoinjs.networks.htmlcoin
+    network = htmlcoin.networks.htmlcoin
     break
 }
 
