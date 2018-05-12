@@ -1,4 +1,4 @@
-import htmlcoinjs from 'htmlcoinjs-lib'
+import htmlcoin from 'htmlcoinjs-lib'
 import bip39 from 'bip39'
 import ledger from 'libs/ledger'
 import server from 'libs/server'
