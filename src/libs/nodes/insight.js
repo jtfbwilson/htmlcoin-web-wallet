@@ -3,7 +3,7 @@ import config from 'libs/config'
 
 let domain = ''
 {
-  case 'livenet':
+  case 'mainnet':
     domain = 'http://explorer.htmlcoin.com'
     break
 }
