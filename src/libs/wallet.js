@@ -1,4 +1,4 @@
-import htmlcoin from 'htmlcoinjs-lib'
+import htmlcoinjs from 'htmlcoinjs-lib'
 import bip39 from 'bip39'
 import ledger from 'libs/ledger'
 import server from 'libs/server'
@@ -10,10 +10,10 @@ let network = {}
 switch (config.getNetwork())
 {
   case 'testnet':
-    network = htmlcoin.networks.htmlcoin_testnet
+    network = htmlcoinjs.networks.htmlcoin_testnet
     break
   case 'mainnet':
-    network = htmlcoin.networks.htmlcoin
+    network = htmlcoinjs.networks.htmlcoin
     break
 }
 
