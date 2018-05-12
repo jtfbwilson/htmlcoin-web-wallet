@@ -2,10 +2,7 @@ import axios from 'axios'
 import config from 'libs/config'
 
 let domain = ''
-switch(config.getNetwork()) {
-  case 'testnet':
-    domain = 'https://'
-    break
+{
   case 'livenet':
     domain = 'http://explorer.htmlcoin.com'
     break
