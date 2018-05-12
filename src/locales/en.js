@@ -6,7 +6,7 @@ export default {
     next: 'NEXT',
     question_mark: '? ',
     testnet: 'Testnet',
-    livenet: 'Htmlcoin Livenet',
+    mainnet: 'Htmlcoin Mainnet',
     menu: {
       create: 'Generate new Wallet',
       create_from_mnemonic: 'Create From Mnemonic',
