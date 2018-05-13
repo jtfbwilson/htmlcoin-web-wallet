@@ -18,7 +18,18 @@
               bottom
             ></v-select>
           </v-flex>
-
+-          <v-flex xs6>
+-            <v-subheader>{{ $t('config.mode') }}</v-subheader>
+-          </v-flex>
+-          <v-flex xs6>
+-            <v-select
+-              :items="modeSelect"
+-              v-model="mode"
+-              :label="$t('config.mode')"
+-              single-line
+-              bottom
+-            ></v-select>
+-          </v-flex>
           <v-flex xs6>
             <v-subheader>LOG</v-subheader>
           </v-flex>
