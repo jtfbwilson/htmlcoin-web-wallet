@@ -20,7 +20,7 @@
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
         <i class="qtum-icon qtum-icon-logo"></i>
-        <span class="text">HTML Web Wallet</span>
+        <span class="text">HTML</span>
         <span @click="changeView('settings')">
           --{{ $t('common.' + network) }}
         </span>
@@ -40,6 +40,7 @@
               <restore-wif @restored="setWallet" v-show="isCurrent['restore_from_wif']"></restore-wif>
               <restore-mobile @restored="setWallet" v-show="isCurrent['restore_from_mobile']"></restore-mobile>
               <restore-key-file @restored="setWallet" v-show="isCurrent['restore_from_key_file']"></restore-key-file>
+              <restore-ledger @restored="setWallet"  v-if="isCurrent['restore_from_ledger']"></restore-ledger>
               <view-wallet :view="isCurrent['view']" v-if="isCurrent['view']"></view-wallet>
               <view-tx :view="isCurrent['transactions']" v-if="isCurrent['transactions']"></view-tx>
               <safe-send @send="setWallet" v-if="isCurrent['safe_send']"></safe-send>
@@ -63,7 +64,6 @@
 <script>
 import Vue from 'vue'
 import createLog from 'localstorage-logger'
-
 //Components
 import Notify from 'components/Notify'
 import Warning from 'components/Warning'
@@ -84,15 +84,12 @@ import CreateContract from 'controllers/CreateContract'
 import SendToContract from 'controllers/SendToContract.vue'
 import CallContract from 'controllers/CallContract.vue'
 import Config from 'controllers/Config'
-
 import config from 'libs/config'
 import webWallet from 'libs/web-wallet'
 import i18n from 'libs/i18n'
-
 const log = createLog({
   maxLogSizeInBytes: 500 * 1024 // 500KB
 })
-
 export default {
   name: 'app',
   i18n,
@@ -110,6 +107,7 @@ export default {
         { icon: 'create', name: 'restore_from_wif' },
         { icon: 'phonelink_lock', name: 'restore_from_mobile' },
         { icon: 'cloud_upload', name: 'restore_from_key_file' },
+        { icon: 'flip_to_front', name: 'restore_from_ledger' },
         { divider: true, name: 'wallet' },
         { icon: 'account_balance_wallet', name: 'view' },
         { icon: 'list', name: 'transactions' },
