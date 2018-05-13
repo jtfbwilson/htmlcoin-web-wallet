@@ -20,7 +20,7 @@
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
         <i class="qtum-icon qtum-icon-logo"></i>
-        <span class="text">HTML</span>
+        <span class="text">HTML Web Wallet</span>
         <span @click="changeView('settings')">
           --{{ $t('common.' + network) }}
         </span>
