@@ -10,13 +10,13 @@ function setWallet(wal) {
   wallet = wal
 }
 
-/**async function connectLedger() {
- * return await Wallet.connectLedger()
- *}
- *
- *function getLedgerDefaultPath() {
- * return Wallet.getLedgerDefaultPath()
-}*/
+async function connectLedger() {
+  return await Wallet.connectLedger()
+ }
+ 
+ function getLedgerDefaultPath() {
+  return Wallet.getLedgerDefaultPath()
+}
 
 function generateMnemonic() {
   return Wallet.generateMnemonic()
@@ -38,9 +38,9 @@ function restoreFromWif(wif) {
   return wallet = Wallet.restoreFromWif(wif)
 }
 
-/**async function restoreHdNodeFromLedgerPath(ledger, path) {
- * return await Wallet.restoreHdNodeFromLedgerPath(ledger, path)
-}*/
+async function restoreHdNodeFromLedgerPath(ledger, path) {
+  return await Wallet.restoreHdNodeFromLedgerPath(ledger, path)
+}
 
 function restoreFromHdNodeByPage(hdNode, start, length = 10) {
   return Wallet.restoreFromHdNodeByPage(hdNode, start, length)
