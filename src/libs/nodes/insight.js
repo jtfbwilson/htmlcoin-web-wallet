@@ -4,7 +4,7 @@ import config from 'libs/config'
 let domain = ''
 switch(config.getNetwork()) {
   case 'testnet':
-    domain = 'https://'
+    domain = 'https://testnet-api.htmlcoin.com'
     break
   case 'mainnet':
     domain = 'http://explorer.htmlcoin.com'
