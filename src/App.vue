@@ -19,7 +19,7 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:55px;height:55px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
         <span @click="changeView('settings')">
           -- {{ $t(network) }}
         </span>
