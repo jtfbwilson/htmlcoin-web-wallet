@@ -1,5 +1,4 @@
-# html-web-wallet
-A web wallet for Htmlcoin
+# Htmlcoin Web Wallet
 
 'sudo git clone' into www folder 
 
