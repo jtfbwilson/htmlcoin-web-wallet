@@ -19,7 +19,7 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:40px;height:40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:55px;height:55px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
         <span @click="changeView('settings')">
           -- {{ $t(network) }}
         </span>
@@ -145,7 +145,7 @@ export default {
       }
     },
     headerClass() {
-      return this.mode === 'normal' ? 'amber' : 'orange'
+      return this.mode === 'normal' ? '"#4885a3"' : 'orange'
     }
   },
   components: {
