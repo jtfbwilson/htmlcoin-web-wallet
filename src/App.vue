@@ -20,7 +20,7 @@
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
        <i class="qtum-icon qtum-icon-logo"></i>
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png">HTML Web Wallet</span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo" width="50" height="50">HTML Web Wallet</span>
         <span @click="changeView('settings')">
           --{{ $t('common.' + network) }}
         </span>
