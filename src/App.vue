@@ -145,7 +145,7 @@ export default {
       }
     },
     headerClass() {
-      return this.mode === 'normal' ? '"#4885a3"' : 'orange'
+      return this.mode === 'normal' ? 'amber' : 'orange'
     }
   },
   components: {
