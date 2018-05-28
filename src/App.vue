@@ -19,9 +19,9 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text">HTML Web Wallet</span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
         <span @click="changeView('settings')">
-          --{{ $t('common.' + network) }}
+          -- {{ $t(network) }}
         </span>
         <v-btn flat @click="changeView('settings')" v-if="mode !== 'normal'">
           {{ $t('common.mode.' + mode) }}
@@ -145,7 +145,7 @@ export default {
       }
     },
     headerClass() {
-      return this.mode === 'normal' ? 'gold' : 'orange'
+      return this.mode === 'normal' ? 'amber' : 'orange'
     }
   },
   components: {
