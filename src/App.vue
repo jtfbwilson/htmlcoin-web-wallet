@@ -17,12 +17,13 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar :class="headerClass" app fixed clipped-left>
+    <v-toolbar :class="headerClass" app fixed clipped-left  active-class="grey darken-4">
       <span class="title">
-        <span class="text" active-class="black"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
-        <span @click="changeView('settings')" active-class="black">
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#111111">Htmlcoin Web Wallet</span>
+        <span @click="changeView('settings')">
           - {{ $t(network) }}
-        </span>
+        </span></font>
         <v-btn flat @click="changeView('settings')" v-if="mode !== 'normal'">
           {{ $t('common.mode.' + mode) }}
         </v-btn>
