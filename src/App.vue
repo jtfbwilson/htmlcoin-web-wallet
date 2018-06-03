@@ -20,7 +20,7 @@
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
         <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="fix:left;width:50px;height:50px;">
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#111111">Htmlcoin Web Wallet</font></span>
+        <font color="#111111">Htmlcoin Web Wallet</font></span>
         <span @click="changeView('settings')">
           <font color="#111111">- {{ $t(network) }}</font>
         </span>
