@@ -19,12 +19,13 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Htmlcoin Web Wallet</span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">
+        <br style="line-height: 15px" /><font color="#111111">Htmlcoin Web Wallet</font></span>
         <span @click="changeView('settings')">
-          -- {{ $t(network) }}
+          <font color="#111111">- {{ $t(network) }}</font>
         </span>
         <v-btn flat @click="changeView('settings')" v-if="mode !== 'normal'">
-          {{ $t('common.mode.' + mode) }}
+          <font color="#111111">{{ $t('common.mode.' + mode) }}</font>
         </v-btn>
       </span>
     </v-toolbar>
