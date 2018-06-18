@@ -45,9 +45,6 @@
               <send-to-contract v-if="isCurrent['send_to_contract']"></send-to-contract>
               <call-contract v-if="isCurrent['call_contract']"></call-contract>
               <config v-if="isCurrent['settings']"></config>
-              <span @click="changeView('settings')">Operating on htmlcoin {{ $t(network) }}</span>
-                <v-btn flat @click="changeView('settings')" v-if="mode !== 'normal'">{{ $t('common.mode.' + mode) }}
-                </v-btn>
             </v-flex>
           </v-layout>
         </v-container>
