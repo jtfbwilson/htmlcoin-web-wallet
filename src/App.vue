@@ -19,8 +19,8 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;width:50px;height:50px;">
-        <br style="line-height: 15px" /><font color="#111111">Htmlcoin Web Wallet</font></span>
+        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;height:50px;">
+        </span>
       </span>
     </v-toolbar>
     <main>
@@ -45,7 +45,7 @@
               <send-to-contract v-if="isCurrent['send_to_contract']"></send-to-contract>
               <call-contract v-if="isCurrent['call_contract']"></call-contract>
               <config v-if="isCurrent['settings']"></config>
-              <span @click="changeView('settings')">- {{ $t(network) }}</span>
+              <span @click="changeView('settings')">Operating on htmlcoin {{ $t(network) }}</span>
                 <v-btn flat @click="changeView('settings')" v-if="mode !== 'normal'">{{ $t('common.mode.' + mode) }}
                 </v-btn>
             </v-flex>
