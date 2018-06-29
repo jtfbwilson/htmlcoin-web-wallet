@@ -19,7 +19,7 @@
     </v-navigation-drawer>
     <v-toolbar :class="headerClass" app fixed clipped-left>
       <span class="title">
-        <span class="text"><img src="https://raw.githubusercontent.com/denuoweb/htmlcoin-web-wallet/master/src/assets/images/logo.png" alt="Htmlcoin Logo"  style="float:left;height:50px;">
+        <span class="text"><img src="https://wallet.htmlcoin.com/images/webwallet.png" alt="Htmlcoin Logo"  style="float:left;height:50px;">
         </span>
       </span>
     </v-toolbar>
