@@ -7,7 +7,7 @@ switch (config.getNetwork()) {
     domain = 'https://testnet-api.htmlcoin.com'
     break
   case 'mainnet':
-    domain = 'http://explorer.htmlcoin.com'
+    domain = 'https://api.htmlcoin.com'
     break
 }
 const apiPrefix = domain + '/api'
