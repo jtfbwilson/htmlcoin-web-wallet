@@ -30,7 +30,7 @@ export default {
   },
 
   async getTokenInfo(contractAddress) {
-   return await _get(`/hrc20/${contractAddress}`)
+   return await _get(`/erc20/${contractAddress}`)
  },
   
   async getTxList(address) {
