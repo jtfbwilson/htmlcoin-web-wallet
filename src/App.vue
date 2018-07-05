@@ -140,7 +140,7 @@ export default {
       }
     },
     headerClass() {
-      return this.mode === 'normal' ? 'amber' : 'orange'
+      return this.mode === 'normal' ? 'white' : 'orange'
     }
   },
   components: {
