@@ -1,15 +1,15 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <v-navigation-drawer permanent clipped app>
       <v-list>
         <template v-for="(item, i) in menu">
           <v-divider dark v-if="item.divider" class="my-4" :key="i" v-show="!notShow[item.name]"></v-divider>
-          <v-list-tile :key="i" v-else @click="changeView(item.name)" active-class="grey darken-4" v-model="isCurrent[item.name]" v-show="!notShow[item.name]">
+          <v-list-tile :key="i" v-else @click="changeView(item.name)" active-class="grey lighten-2" v-model="isCurrent[item.name]" v-show="!notShow[item.name]">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title class="grey--text">
+              <v-list-tile-title class="black--text">
                 {{ $t('common.menu.' + item.name) }}
               </v-list-tile-title>
             </v-list-tile-content>
@@ -140,7 +140,7 @@ export default {
       }
     },
     headerClass() {
-      return this.mode === 'normal' ? 'grey lighten-4' : 'orange'
+      return this.mode === 'normal' ? 'grey darken-4' : 'orange'
     }
   },
   components: {
