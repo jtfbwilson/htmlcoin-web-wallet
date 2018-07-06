@@ -9,7 +9,7 @@ export default {
     testnet: 'Testnet',
     mainnet: 'Htmlcoin Mainnet',
     menu: {
-      create: 'Generate new Wallet',
+      create: 'Generate New Wallet',
       create_from_mnemonic: 'Create From Mnemonic',
       restore_from_mnemonic: 'Restore From Mnemonic',
       restore_from_wif: 'Restore From WIF',
@@ -50,7 +50,7 @@ export default {
       the_key_file_is_not_a_valid_format: 'The key file is not a valid format',
       restore_key_file_fail: 'Restore from key file failed. Maybe the password is not correct',
       connect_ledger_fail: 'Fail to connect Ledger. Please re-plugin your ledger and try again',
-      token_contract_address_is_not_exists: 'Token contract address is not exists, please confirm and try again',
+      token_contract_address_is_not_exists: 'Token contract address does not exist, please confirm and try again',
     },
     mode: {
       normal: 'Normal',
@@ -69,7 +69,7 @@ export default {
     upload: 'Upload',
   },
   file_creator: {
-    download: 'Please click this button to start downloading file, if the downloading not start, you can right-click the button and choose "save the link as ..."',
+    download: 'Please click this button to start downloading your backup. If the download does not start, you can right-click this button and choose "save link as ..."',
   },
   ledger: {
     comm_fail: 'Fail to connect Ledger. Please re-plugin your ledger and try again',
@@ -91,7 +91,7 @@ export default {
     to_address: 'To Address',
     amount: 'Amount',
     fee: 'Fee',
-    info: 'You need two computers(one online and one offline) and a removeable storage device to finish a safe-send. If you follow the tips below, you will not take risk of leak your private key. For the offline computer, please in "Settings"-"Mode" choose "offline", and then restore your wallet.',
+    info: 'You need two computers(one online and one offline) and a removeable storage device to finish a safe-send. If you follow the tips below, you will not risk leaking your private key. For the offline computer, please in "Settings"-"Mode" choose "offline", and then restore your wallet.',
     info1_online: 'Please finish the form, then save the file and copy to the offline computer. And the finish step 2 on the offline computer',
     info1_offline: 'Please finish step 1 on the online computer and copy the file from online computer and then go to step 2',
     info2_online: 'Please finish this step on offline computer, and copy the file from offline computer and then go to step 3',
