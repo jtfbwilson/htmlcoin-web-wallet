@@ -1,10 +1,10 @@
 <template>
   <v-app light>
     <v-navigation-drawer permanent clipped app>
-      <v-list>
+      <v-list class="grey lighten-2">
         <template v-for="(item, i) in menu">
           <v-divider dark v-if="item.divider" class="my-4" :key="i" v-show="!notShow[item.name]"></v-divider>
-          <v-list-tile :key="i" v-else @click="changeView(item.name)" active-class="grey lighten-2" v-model="isCurrent[item.name]" v-show="!notShow[item.name]">
+          <v-list-tile :key="i" v-else @click="changeView(item.name)" active-class="white" v-model="isCurrent[item.name]" v-show="!notShow[item.name]">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
