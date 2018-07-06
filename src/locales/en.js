@@ -100,7 +100,7 @@ export default {
     info3_offline: 'Please finish this step on the online computer',
   },
   send: {
-    send_tokens: 'Send tokens',
+    send_tokens: 'Send',
     enter_address: 'Please enter address again (Double check)',
     going_to_send: 'You are going to send ',
     to_address: 'to address ',
@@ -165,7 +165,7 @@ export default {
   },
   dump_as_key_file: {
     title: 'Dump as a key file',
-    password_title: 'Please input a password to encrypt you wallet',
+    password_title: 'Please input a password to encrypt your wallet',
     warning: 'Please remember this password, if you lose this password, this backup file cannot be decrypted any more',
   },
   config: {
