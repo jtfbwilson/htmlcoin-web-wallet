@@ -123,10 +123,10 @@ export default {
     result: 'Result',
   },
   create: {
-    title: 'Generate new Wallet',
+    title: 'Generate New Wallet',
   },
   create_mnemonic: {
-    title: 'Generate new Wallet',
+    title: 'Generate New Wallet',
     remember: 'Please remember the following mnemonics',
     remembered: 'I have remembered all. Let\'s check',
   },
